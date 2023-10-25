@@ -182,7 +182,7 @@ export const Work = [
         description:["Personal portfolio made by using React.js , styled components and React Motion."],
        
         imgSrc:'https://github.com/marins1897/PortfolioMS/blob/main/PortfolioMS.jpg?raw=true',
-        demo:"https://marins.vercel.app/",
+        demo:"https://marin-portfolio1897.vercel.app/",
         github:"https://github.com/marins1897/PortfolioMS",
         type : "react"
     },
