@@ -164,6 +164,7 @@ const Item = {
 
 const WorkComponent = (props) => {
     const {name,description, demo, github, imgSrc} = props.work;
+    console.log(demo)
     return(
     <Container variants={Item}>
         <Box>
@@ -179,11 +180,11 @@ const WorkComponent = (props) => {
         
              <Footer>
                 {demo && (
-                <Link to={{pathname: `${demo}`}} target="_blank">
+                <Link to={`${demo}`} target="_blank">
                     Visit
                 </Link> )}
                 {!demo && <div></div>}
-                <Git to={{pathname: `${github}`}} target="_blank">
+                <Git to={`${github}`} target="_blank">
                     <Github width={30} height={30} />
                 </Git>
             </Footer>
