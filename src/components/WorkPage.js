@@ -8,6 +8,8 @@ import { Work } from '../data/WorkData';
 import WorkComponent from './WorkComponent';
 import Loading from "../subComponents/Loading";
 import {motion} from 'framer-motion';
+import { FormControl, FormGroup} from "@material-ui/core";
+import WorkTabs from '../material/WorkTabs';
 
 const AnchorComponent = lazy(() => import("../subComponents/Anchor"));
 const SocialIcons = lazy(() => import("../subComponents/SocialIcons"));
@@ -23,6 +25,7 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center;
 width: 100vw;
+min-height : 100vh;
 
 `
 
@@ -32,6 +35,7 @@ width: 100%;
 height: auto;
 position: relative;
 padding-bottom: 5rem;
+min-height : 100vh;
 `
 
 const Center = styled.div`
@@ -76,11 +80,33 @@ const container = {
 const WorkPage = () => {
     const [numbers, setNumbers] = useState(0);
 
+    const [activeWorkFilter, setActiveWorkFilter] = useState(() => {
+      const activeFilter = window.sessionStorage.getItem('activeWorkFilter');
+      return activeFilter 
+            ? activeFilter 
+            : 'all';
+    });
+
+    const handleWorkFilter = (event, filter) => {
+      setActiveWorkFilter(filter);
+      window.sessionStorage.setItem('activeWorkFilter', filter);
+    };
+
 
     useEffect(() => {
           let num = (window.innerHeight - 70)/30;
           setNumbers(parseInt(num));
     }, []);
+
+    const filterWorkByType = (data, filter) => {
+      if (filter === 'all') {
+        return data;
+      }
+      return data.filter(work => work.type === filter);
+    };
+
+    const filteredWork = filterWorkByType(Work, activeWorkFilter);
+
 
     return (
       <Suspense fallback={<Loading />}>
@@ -97,11 +123,18 @@ const WorkPage = () => {
                   <PowerButton />
                   <SocialIcons />
                   <AnchorComponent numbers={numbers} />
+                  <FormControl component="fieldset" style={{ top : '10vh' , left : '2rem', zIndex : 999, margin : '2vh 0'}}>
+                        <FormGroup aria-label="position" row style={{ width : '100%'}}>
+                          <WorkTabs handleWorkFilter={handleWorkFilter}
+                                            activeWorkFilter={activeWorkFilter}
+                          />
+                        </FormGroup>
+                      </FormControl>  
                       
                    <Center>
-                     <Grid  variants={container} initial="hidden" animate="show" >                       
+                     <Grid variants={container} initial="hidden" animate="show" >                     
                      {
-                            Work.map((work) => {
+                            filteredWork.map((work) => {
                                return <WorkComponent key={work.id} work={work}/>
                             })
                         }                                              

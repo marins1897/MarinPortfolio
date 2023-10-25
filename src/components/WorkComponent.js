@@ -178,9 +178,11 @@ const WorkComponent = (props) => {
              </HashDescriptions>
         
              <Footer>
+                {demo && (
                 <Link to={{pathname: `${demo}`}} target="_blank">
                     Visit
-                </Link>
+                </Link> )}
+                {!demo && <div></div>}
                 <Git to={{pathname: `${github}`}} target="_blank">
                     <Github width={30} height={30} />
                 </Git>

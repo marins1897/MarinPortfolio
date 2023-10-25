@@ -1,5 +1,6 @@
 import React from 'react';
-import Particles from 'react-particles-js';
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
 import styled from 'styled-components';
 
 /** particle config files */
@@ -18,9 +19,16 @@ z-index: 0;
  `
 
 const ParticleComponent = (props) => {
+    const particlesInit = async (main) => {
+        await loadFull(main);
+      };
+
     return (
         <Box>
-           <Particles style={{position:'absolute', top:0}} params={props.theme === "light" ? configLight  : configDark} />
+           <Particles style={{position:'absolute', top:0}} 
+                    options={props.theme === "light" ? configLight  : configDark} 
+                    id='particles1'
+                    init={particlesInit}/>
         </Box>
     );
 };

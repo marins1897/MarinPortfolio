@@ -46,8 +46,8 @@ color: ${props => props.theme.text};
 background-color: ${props => props.theme.body};
 padding: 2rem;
 width: 30vw;
-height: 60vh;
-margin-bottom: 5%;
+height: 70vh;
+margin-bottom: 0%;
 line-height: 1.5;
 cursor: pointer;
 backdrop-filter: blur(3px);
@@ -171,21 +171,21 @@ const MySkillsPage = () => {
 <ParticleComponent theme='light' />
               <Main>
                   <Title>
-                     <Develope width={40} height={40} /> Developer
+                     <Develope width={40} height={40} /> Web Developer
                   </Title>
                      <Description>
                      I enjoy bringing new ideas to life. It gives me new creative ideas and improves my logical thinking.
                      </Description>
                      <Description>
                      <strong>Skills</strong>
-                     <p> HTML, Javascript, React.js, CSS, Typescript, Next.js,  Solidity, web3,
-                           Smart Contracts  </p>
+                     <p> HTML, CSS, Javascript, Typescript, React.js, React Native, Svelte, Next.js, Node.js, Express.js,
+                        d3.js  </p>
                      </Description>
                      <Description>
-                     <strong>Tools</strong>
+                     <strong>Other Skills</strong>
                      <p>
                          
-                            VSCode, API, REST API, NPM, git, jest, Remix IDE
+                            MySQL, MongoDB, Material UI, Three.js, jest, npm, yarn, git, API, OOP, DSA
                                                   
                      </p>
                      </Description>
@@ -193,22 +193,21 @@ const MySkillsPage = () => {
 
               <Main>
                    <Title>
-                   <Engineer width={40} height={40} /> Software Engineer
+                   <Engineer width={40} height={40} /> Blockchain Engineer
                    </Title>
                    <Description>
-                   It's a lot of fun to solve problems and make things work.
+                   It's a lot of fun to contribute to the creation of a decentralized future.
                      </Description>
                      <Description>
                      <strong>Skills</strong>
-                     <p> OOP concept, PLC, CLIPS, AMOS, MySQL, NoSQL, MongoDB, Firebase, PHP, C, C++, 
-                  Computer arhitecture, network, microprocessors 
+                     <p> Smart Contracts, dApps, Ethereum, Solidity, web3.js, ethers.js, Hyperledger Fabric, Golang
                      </p>
                      </Description>
                      <Description>
-                     <strong>Tools</strong>
+                     <strong>Other Skills</strong>
                      <p>
                          
-                            PSIM, Matlab/Simulink, HMI Panel, LOGO!, CISCO PT, Schrack Design
+                            DLT, Distributed Systems, HLF SDK, Docker, C, C++
                         
                          
                      </p>
