@@ -164,7 +164,6 @@ const Item = {
 
 const WorkComponent = (props) => {
     const {name,description, demo, github, imgSrc} = props.work;
-    console.log(demo)
     return(
     <Container variants={Item}>
         <Box>

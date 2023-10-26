@@ -31,6 +31,12 @@ const StyledTab = styled(Tab)`
 
         @media (max-width: 40em) {
           font-size : 12px;
+          min-width: 60px;
+        }
+
+        @media (max-width: 30em) {
+          font-size : 10px;
+          min-width: 40px;
         }
     }
 
