@@ -57,6 +57,16 @@ export const Work = [
         type : "react-native"
     },
     {
+        id:41,
+          name:"DeFi dApp",
+          description:["Send ethers on Ethereum test network and display messages and names of people who sent ether, Smart Contract writen in Solidity, compiled and deployed using Hardhat and Alchemy node provider. Decentralized application builded with ethers.js and React."],
+         
+          imgSrc: 'https://github.com/marins1897/DeFi_dApp/blob/master/defi_dApp.png?raw=true',
+          demo:"",
+          github:"https://github.com/marins1897/DeFi_dApp",
+          type : "blockchain"
+    },
+    {
         id:5,
         name:"Redux Shop",
         description:["A small React Redux shop with Firebase. Message about cart state displayed in case of Error, Sending or Success message."],
@@ -110,11 +120,11 @@ export const Work = [
     {
       id:2,
         name:"Lottery Smart Contract",
-        description:["Buy lottery ticket on react and be a winner. Made with Solidity, web3, React on Rinkeby Ethereum test network."],
+        description:["Buy lottery ticket and be a winner. Lottery Contract written in Solidity, compiled and deployed using solc package. Deployed to Ethereum test network using script written from scratch, Truffle and infura provider. Decentralized application using web3.js library and React. Tested using Mocha framework. "],
        
-        imgSrc: 'https://github.com/marins1897/PortfolioMS/blob/main/src/data/DataImages/Lottery.jpg?raw=true',
+        imgSrc: 'https://github.com/marins1897/lottery_dapp/blob/master/lottery_dapp.png?raw=true',
         demo:"",
-        github:"https://github.com/marins1897/lottery-SmartContract",
+        github:"https://github.com/marins1897/lottery_dapp",
         type : "blockchain"
     },
     {
@@ -207,6 +217,16 @@ export const Work = [
         type : "react"
     },
     {
+        id:40,
+          name:"Balance & Transfer dApp",
+          description:["Solidity Smart Contract for checking balance and making trasnfer of Token, compiled and deployed to Goerli using Hardhat, Infura and Metamask. Frontend part of application builded with ethers.js and React, test written using chai."],
+         
+          imgSrc: 'https://github.com/marins1897/hardhat_balance/blob/master/hardhat_dApp.png?raw=true',
+          demo:"",
+          github:"https://github.com/marins1897/hardhat_balance/",
+          type : "blockchain"
+    },
+    {
         id:14,
         name:"To Do App",
         description:["To Do App builded with Typescript and React.js."],
@@ -245,6 +265,16 @@ export const Work = [
         demo:"https://to-do-svelte.vercel.app/",
         github:"https://github.com/marins1897/ToDo-Svelte",
         type : "svelte"
+    },
+    {
+        id:39,
+          name:"Storage dApp",
+          description:["Simple Storage Solidity Smart Contract deployed to Goerli Ethereum test network by using Alchemy and Metamask. Contract compiled and deployed using Truffle tool, communication layer via web3.js library. Client of decentralized app builded with React."],
+         
+          imgSrc: 'https://github.com/marins1897/truffle_dapp/blob/master/truffle_dapp.png?raw=true',
+          demo:"",
+          github:"https://github.com/marins1897/truffle_dapp",
+          type : "blockchain"
     },
     {
         id:15,
