@@ -59,7 +59,7 @@ export const Work = [
     {
         id:41,
           name:"DeFi dApp",
-          description:["Send ethers on Ethereum test network and display messages and names of people who sent ether, Smart Contract writen in Solidity, compiled and deployed using Hardhat and Alchemy node provider. Decentralized application builded with ethers.js and React."],
+          description:["Smart Contract writen in Solidity, compiled and deployed using Hardhat and Alchemy node provider. Decentralized application builded with ethers.js and React."],
          
           imgSrc: 'https://github.com/marins1897/DeFi_dApp/blob/master/defi_dApp.png?raw=true',
           demo:"",
@@ -120,7 +120,7 @@ export const Work = [
     {
       id:2,
         name:"Lottery Smart Contract",
-        description:["Buy lottery ticket and be a winner. Lottery Contract written in Solidity, compiled and deployed using solc package. Deployed to Ethereum test network using script written from scratch, Truffle and infura provider. Decentralized application using web3.js library and React. Tested using Mocha framework. "],
+        description:["Buy lottery ticket and be a winner. Contract written in Solidity, compiled and deployed using solc package. Deployed to Ethereum test network using Truffle and infura provider. Decentralized application using web3.js library and React. Tested using Mocha framework. "],
        
         imgSrc: 'https://github.com/marins1897/lottery_dapp/blob/master/lottery_dapp.png?raw=true',
         demo:"",
@@ -219,7 +219,7 @@ export const Work = [
     {
         id:40,
           name:"Balance & Transfer dApp",
-          description:["Solidity Smart Contract for checking balance and making trasnfer of Token, compiled and deployed to Goerli using Hardhat, Infura and Metamask. Frontend part of application builded with ethers.js and React, test written using chai."],
+          description:["Solidity Smart Contract for checking balance and making transfer of Token, compiled and deployed to Goerli using Hardhat, Infura and Metamask. Frontend builded with ethers.js and React."],
          
           imgSrc: 'https://github.com/marins1897/hardhat_balance/blob/master/hardhat_dApp.png?raw=true',
           demo:"",
@@ -269,7 +269,7 @@ export const Work = [
     {
         id:39,
           name:"Storage dApp",
-          description:["Simple Storage Solidity Smart Contract deployed to Goerli Ethereum test network by using Alchemy and Metamask. Contract compiled and deployed using Truffle tool, communication layer via web3.js library. Client of decentralized app builded with React."],
+          description:["Simple Storage Solidity Smart Contract deployed to Goerli Ethereum test network by using Alchemy and Metamask. Contract compiled and deployed using Truffle tool, communication layer via web3.js library."],
          
           imgSrc: 'https://github.com/marins1897/truffle_dapp/blob/master/truffle_dapp.png?raw=true',
           demo:"",
